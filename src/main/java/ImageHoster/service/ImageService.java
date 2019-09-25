@@ -26,7 +26,8 @@ public class ImageService {
     }
 
 
-    //The method calls the getImageById() method in the Repository and passes the title of the image to be fetched
+    //The method calls the getImageById() method in the Repository and passes the image id of the image to be fetched
+    //As image id is the Primary key of Image table, title of image can be ignore while pulling from database.
     public Image getImageById(Integer imageId) {
         return imageRepository.getImageById(imageId);
     }
